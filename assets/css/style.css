@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  color: #2dc997;
+  color: #212e7e;
 }
 
 a:hover,
@@ -75,7 +75,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2dc997;
+  background: #212e7e;
   color: #fff;
 }
 
@@ -92,7 +92,7 @@ h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: rgba(52, 59, 64, 0.9);
+  background: #11173f;
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
@@ -138,6 +138,10 @@ h6 {
   border-left: 0;
 }
 
+#topbar a.text-info {
+  color: gray !important;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -161,12 +165,12 @@ h6 {
 }
 
 #header #logo img {
-  max-height: 80px;
+  max-height: 70px;
 }
 
 @media (max-width: 992px) {
   #header #logo img {
-    max-height: 80px;
+    max-height: 70px;
   }
 }
 
@@ -188,7 +192,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../video/Video01.gif) top center;
+  background: url(../video/Video02.gif) top center;
   background-size: cover;
   position: relative;
 }
@@ -268,8 +272,331 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #2dc997;
-  border: 2px solid #2dc997;
+  background: #212e7e;
+  border: 2px solid #212e7e;
+}
+
+/*--------------------------------------------------------------
+# News Section
+--------------------------------------------------------------*/
+
+.events .events_inner {
+  width: 100%;
+  max-width: 1120px;
+  padding: 0 48px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.events {
+  position: relative;
+  z-index: 1;
+  background: #f2f2f2;
+}
+
+@media (max-width: 1324px) {
+  .events .events_inner {
+    max-width: none;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+@media (max-width: 1324px) and (max-width: 1200px) {
+  .events .events_inner {
+    padding-left: 11.33%;
+  }
+}
+
+@media (max-width: 1324px) and (max-width: 900px) {
+  .events .events_inner {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 1324px) and (max-width: 600px) {
+  .events .events_inner {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 1324px) and (max-width: 1200px) {
+  .events .events_inner {
+    padding-right: 11.33%;
+  }
+}
+
+@media (max-width: 1324px) and (max-width: 900px) {
+  .events .events_inner {
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 1324px) and (max-width: 600px) {
+  .events .events_inner {
+    padding-right: 30px;
+  }
+}
+
+.events .events_innermost {
+  margin: 0 -48px;
+}
+
+@media (max-width: 600px) {
+  .events .events_innermost {
+    margin: 0 -30px;
+  }
+}
+
+.events .event {
+  display: inline-block;
+  vertical-align: top;
+  width: 33.333%;
+  margin: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.events .event .image {
+  display: block;
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+@media (max-width: 900px) {
+  .events .event .image {
+    display: none;
+  }
+}
+
+.events .event .event_date {
+  display: block;
+  z-index: 2;
+  color: #445db7;
+  line-height: 1.3;
+  transition: transform 0.3s, color 0.3s;
+}
+
+@media (min-width: 901px) {
+  .events .event .event_date {
+    position: absolute;
+    top: 40px;
+    left: 48px;
+    height: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .events .event .event_date {
+    padding-top: 40px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+@media (max-width: 600px) {
+  .events .event .event_date {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.events .event .event_date .month {
+  display: block;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+  .events .event .event_date .month {
+    font-size: 15px;
+  }
+}
+
+.events .event .event_date .date {
+  display: block;
+  font-family: "schoolbook-web", georgia, times, serif;
+  font-size: 45px;
+}
+
+@media (max-width: 900px) {
+  .events .event .event_date .date {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 600px) {
+  .events .event .event_date .date {
+    font-size: 32px;
+  }
+}
+
+.events .event .details {
+  display: block;
+  min-height: 144px;
+  position: relative;
+  z-index: 1;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #11173f;
+  padding: 40px 48px 0px 116px;
+  background: #f2f2f2;
+  transition: color 0.3s, all 0.3s;
+}
+
+@media (max-width: 900px) {
+  .events .event .details {
+    padding-top: 10px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+@media (max-width: 600px) {
+  .events .event .details {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.events .event .details .title {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  transition: transform 0.3s;
+  hyphens: auto;
+}
+
+@media (max-width: 600px) {
+  .events .event .details .title {
+    font-size: 15px;
+  }
+}
+
+.events .event .details .time {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  margin-top: 8px;
+  opacity: 0.5;
+  transition: transform 0.3s;
+}
+
+.events .event .details .seymore {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 48px;
+  color: #212e7e;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateX(20px);
+  transition: transform 0.3s, opacity 0.3s, color 0.3s;
+}
+
+.events .event .details .seymore:after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #f2f2f2;
+  transform: scaleY(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s;
+}
+
+.events .event .details .seymore:hover {
+  color: #4d4d4d;
+}
+
+.events .event .details .seymore:hover:after {
+  transform: scaleY(1);
+}
+
+.events .event:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 40px;
+  bottom: 40px;
+  right: 0;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.events .event:last-child:before {
+  content: none;
+}
+
+@media (min-width: 901px) {
+  .events .event.featured .image,
+  .events .event:hover .image {
+    transform: translateY(-100%);
+  }
+
+  .events .event.featured .event_date,
+  .events .event:hover .event_date {
+    transform: translateY(-100%);
+    color: #fff;
+  }
+
+  .events .event.featured .details,
+  .events .event:hover .details {
+    color: #4d4d4d;
+    background: #d9d9d9;
+  }
+
+  .events .event.featured .details .title,
+  .events .event.featured .details .time,
+  .events .event:hover .details .title,
+  .events .event:hover .details .time {
+    transform: translateX(-68px);
+  }
+
+  .events .event.featured .details .seymore,
+  .events .event:hover .details .seymore {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .events .event.featured {
+    float: right;
+  }
+
+  .events .event.featured .details {
+    color: #fff;
+    background: #0d4b73;
+  }
+
+  .events .event.featured .details .seymore {
+    color: #00bbd0;
+  }
+
+  .events .event.featured .details .seymore:after {
+    background: #00bbd0;
+  }
+
+  .events .event.featured .details .seymore:hover {
+    color: #fff;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -369,7 +696,7 @@ h6 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #2dc997;
+  background-color: #8893d3;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
@@ -405,7 +732,7 @@ h6 {
 }
 
 .nav-menu ul li a:hover {
-  background: #2dc997;
+  background: #212e7e;
   color: #fff;
 }
 
@@ -493,11 +820,11 @@ h6 {
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #2dc997;
+  color: #212e7e;
 }
 
 #mobile-nav ul .menu-item-active {
-  color: #2dc997;
+  color: #212e7e;
 }
 
 #mobile-body-overly {
@@ -656,11 +983,11 @@ section {
   flex-direction: column;
   text-align: center;
   border-radius: 50%;
-  border: 2px solid #2dc997;
+  border: 2px solid #212e7e;
 }
 
 #about .about-container .icon-box .icon i {
-  color: #2dc997;
+  color: #212e7e;
   font-size: 24px;
 }
 
@@ -692,7 +1019,7 @@ section {
 #facts .counters span {
   font-size: 48px;
   display: block;
-  color: #2dc997;
+  color: #212e7e;
 }
 
 #facts .counters p {
@@ -734,7 +1061,7 @@ section {
   text-align: center;
   width: 72px;
   height: 72px;
-  background: #2dc997;
+  background: #212e7e;
 }
 
 #services .icon a {
@@ -748,15 +1075,15 @@ section {
 
 #services .box:hover .icon {
   background: #fff;
-  border: 2px solid #2dc997;
+  border: 2px solid #212e7e;
 }
 
 #services .box:hover .icon i {
-  color: #2dc997;
+  color: #212e7e;
 }
 
 #services .box:hover .icon a {
-  color: #2dc997;
+  color: #212e7e;
 }
 
 #services .title {
@@ -824,8 +1151,8 @@ section {
 }
 
 #call-to-action .cta-btn:hover {
-  background: #2dc997;
-  border: 2px solid #2dc997;
+  background: #212e7e;
+  border: 2px solid #212e7e;
 }
 
 /* Portfolio Section
@@ -860,7 +1187,7 @@ section {
 #portfolio #portfolio-flters li:hover,
 #portfolio #portfolio-flters li.filter-active {
   color: #fff;
-  background: #2dc997;
+  background: #212e7e;
 }
 
 #portfolio #portfolio-flters li:last-child {
@@ -886,7 +1213,7 @@ section {
   bottom: -50px;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: #2dc997;
+  background: #212e7e;
   padding: 15px 20px;
 }
 
@@ -962,7 +1289,7 @@ section {
 }
 
 .portfolio-details .portfolio-details-carousel .owl-dot.active {
-  background-color: #2dc997 !important;
+  background-color: #212e7e !important;
 }
 
 .portfolio-details .portfolio-info {
@@ -1061,7 +1388,7 @@ section {
 }
 
 #team .member .social a:hover {
-  color: #2dc997;
+  color: #212e7e;
 }
 
 #team .member .social i {
@@ -1087,7 +1414,7 @@ section {
 
 #contact .info i {
   font-size: 32px;
-  color: #2dc997;
+  color: #212e7e;
   float: left;
 }
 
@@ -1121,7 +1448,7 @@ section {
 }
 
 #contact .social-links a:hover {
-  background: #2dc997;
+  background: #212e7e;
   color: #fff;
 }
 
@@ -1184,11 +1511,11 @@ section {
 
 #contact .php-email-form input::focus,
 #contact .php-email-form textarea::focus {
-  background-color: #2dc997;
+  background-color: #212e7e;
 }
 
 #contact .php-email-form button[type="submit"] {
-  background: #2dc997;
+  background: #212e7e;
   border: 0;
   padding: 10px 24px;
   color: #fff;
