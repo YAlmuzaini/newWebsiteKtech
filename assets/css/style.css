@@ -205,7 +205,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -459,8 +459,8 @@ h6 {
 
 @media (max-width: 600px) {
   .events .event .details {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -491,7 +491,7 @@ h6 {
   transition: transform 0.3s;
 }
 
-.events .event .details .seymore {
+.events .event .details .saymore {
   display: block;
   position: absolute;
   bottom: 0;
@@ -508,7 +508,7 @@ h6 {
   transition: transform 0.3s, opacity 0.3s, color 0.3s;
 }
 
-.events .event .details .seymore:after {
+.events .event .details .saymore:after {
   content: "";
   position: absolute;
   z-index: 2;
@@ -522,11 +522,11 @@ h6 {
   transition: transform 0.3s;
 }
 
-.events .event .details .seymore:hover {
+.events .event .details .saymore:hover {
   color: #4d4d4d;
 }
 
-.events .event .details .seymore:hover:after {
+.events .event .details .saymore:hover:after {
   transform: scaleY(1);
 }
 
@@ -571,8 +571,8 @@ h6 {
     transform: translateX(-68px);
   }
 
-  .events .event.featured .details .seymore,
-  .events .event:hover .details .seymore {
+  .events .event.featured .details .saymore,
+  .events .event:hover .details .saymore {
     transform: translateX(0);
     opacity: 1;
   }
@@ -586,15 +586,15 @@ h6 {
     background: #0d4b73;
   }
 
-  .events .event.featured .details .seymore {
+  .events .event.featured .details .saymore {
     color: #00bbd0;
   }
 
-  .events .event.featured .details .seymore:after {
+  .events .event.featured .details .saymore:after {
     background: #00bbd0;
   }
 
-  .events .event.featured .details .seymore:hover {
+  .events .event.featured .details .saymore:hover {
     color: #fff;
   }
 }
